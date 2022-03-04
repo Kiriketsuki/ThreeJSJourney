@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vercel --prod"
   },
   "devDependencies": {
     "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "lil-gui": "^0.16.1",
+    "three": "^0.138.3",
+    "vercel": "^24.0.0"
   }
 }
