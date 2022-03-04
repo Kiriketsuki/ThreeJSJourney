@@ -350,6 +350,9 @@ const tick = () =>
     ghost3.position.z = Math.sin(ghost3Angle) * (7 + Math.sin(elapsedTime * 0.5))
     ghost3.position.y = Math.sin(elapsedTime * 4) + Math.sin(elapsedTime * 2.5)
 
+    // Move camera
+    const time = Math.floor(elapsedTime * 1000000)%2 + 1;
+    camera.position.x = Math.cos(time * -0.02);
     // Render
     renderer.render(scene, camera)
 
